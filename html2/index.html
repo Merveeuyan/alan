@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
- <title>alan</title>
+ <title>not</title>
   </head>
 
 <body>
-  <a href="a.html">2.ödv</a>
-<script>
-function alan(r, p = 3) {
-  return p*r*r;
+  <script type="text/JavaScript">
+    let vize = prompt("Vize notunuz:");
+    let final = prompt("Final notunuz:");
+
+    vize = parseInt(vize);
+    final = parseInt(final);
+
+    let sonuc = (vize * 0.6) + (final * 0.4);
+document.write("vize: " + vize + " ");
+document.write("final: " + final + " ");
+document.write("sonuc: " + sonuc + " " );
+
+if (sonuc < 60) {
+ document.write("kaldınız");
+}else {
+  document.write("geçtiniz");
 }
-function carpma(alan1, alan2) {
-  return alan1*alan2;
-}
-let alan1 = alan(7);
-let alan2 = alan(3);
-let sonuc = carpma(alan1, alan2);
-console.log(sonuc);
-</script>
+   
+   </script>
 
 
 </html>
